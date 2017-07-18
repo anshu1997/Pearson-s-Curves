@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+<div id="wrapper" align="center">
+<form action="{% url "result" %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+
+    <input type="file" name="csv_file" />
+    <input type="submit" value="Upload" />
+
+</form>
+</div>
+</body>
+</html>
